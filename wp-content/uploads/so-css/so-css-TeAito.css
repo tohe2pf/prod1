@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: MandalaHandmade;
+    src: url("../files/font/Mandala Handmade.otf");
+}
+@font-face {
+    font-family: adelia;
+    src: url("../files/font/adelia.otf");
+}
+@font-face {
+    font-family: bebas-regular;
+    src: url("../files/font/Bebas-Regular.otf");
+}
+@font-face {
+    font-family: PalmBeach;
+    src: url("../files/font/Palm Beach.ttf");
+}
+@font-face {
+    font-family: SaphirRegular;
+    src: url("../files/font/Sephir-Regular.otf");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    box-sizing: border-box;
+    background:rgb(170,170,170);
+}
+
+
+#page{
+    display:flex;
+    min-height:100vh;
+    flex-direction:column;
+}
+#header {
+    display:flex;
+    align-items:center;
+    background:rgba(220,220,220,0);
+    width:100%;
+    height:50px;
+    position:fixed;
+}
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex:1;
+    width:100%;
+    height:100vh;
+}
+#footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(170,170,170);
+    width:100%;
+    height:20px;
+}
+
+
+#background-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex:1;
+    background-image:url('../files/pictures/models-background.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 60% 30%;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0);
+}
+.background-transparent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    flex:1;
+    width:100%;
+    height:100vh;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+
+.navbar{
+    margin:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style-type: none;
+    width:100%;
+    background:rgba(220,220,220,.0);
+}
+.navbar ul{
+    display:flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    display:flex;
+    text-decoration:none;
+    padding:10px;
+    margin:2px;
+    text-decoration:none;
+    color:#fff;
+    border-radius:5px;
+    font-family:verdana;
+    font-size:15px;
+    font-family: bebas-regular;
+}
+.navbar ul li a:hover{
+    background:rgb(0,0,0);
+    color:rgb(200,200,200);
+}
+
+
+#presentation-content{
+    display:flex;
+    flex-direction:column;
+    background:rgba(170,170,170,.7);
+    border-radius:10px;
+    padding:10px;
+    margin:30px;
+    width:500px;
+    font-family:verdana;
+    font-size:12px;
+}
+
+
+#content-boutique{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    width:80%;
+    height:100%;
+    background:rgba(190,190,190);
+    padding:10px 10px 0px 10px;
+    margin:0;
+}
+#content-article{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    background:rgba(180,180,180);
+}
+.content-block-article{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background:rgba(190,190,190);
+    width:300px;
+    height:350px;
+    margin:5px;
+    border-radius:10px;
+    overflow:hidden;
+}
+.content-block-transparent{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.6);
+    width:100%;
+    height:100%;
+}
+.image_article{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+.img-article{
+    display:flex;
+    width:100%;
+    height:200px;
+}
+.name_article{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: bebas-regular;
+    font-size:20px;
+}
+.prix_article{
+    display:flex;
+    font-family:bebas-regular;
+    font-size:17px;
+}
+.description_article{
+    display:flex;
+    font-family:verdana;
+    font-size:12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.name{
+    font-family: MandalaHandmade;
+    font-family: adelia;
+    font-size:100px;
+    color:rgb(200,200,200);
+}
+.namesite{
+    font-family: MandalaHandmade;
+    font-family: adelia;
+    font-size:12px;
+    margin-left:10px; 
+}
+
+
+.content_inscription{
+    display:flex;
+    flex-direction:column;
+}
+.content_inscription input{
+    margin:5px;
+    padding:10px;
+    border-radius:5px;
+}
+
+
+
+
+#block-inscription input[type="text"],#block-inscription input[type="password"]{
+    display:flex;
+    width:200px;
+    height:10px;
+    user-select:none;
+    border-color:rgba(250,250,250,.0);
+    border-width:1px;
+    border-radius:3px;
+    outline:none;
+    background:rgba(250,250,250,.9);
+}
+#block-inscription input[type="text"]:focus{
+    outline:none;
+}
+#block-inscription input[type="submit"]:hover{
+    cursor:pointer;
+}
+#block-inscription input[type="text"]:focus,#block-inscription input[type="password"]:focus{
+    border-color:rgba(250,250,250,.7);
+    box-shadow:0px 0px 10px 0px;
+}
+
+
+.select{
+    display:flex;
+    width:220px;
+    padding:7px;
+    user-select:none;
+    border-color:rgba(250,250,250,.0);
+    border-width:1px;
+    border-radius:3px;
+    outline:none;
+    background:rgba(250,250,250,.9);
+    margin:5px;
+}
+
+.bck-vd{
+    display:flex;
+    position:absolute;
+    right:0;
+    bottom:0;
+    background:red;
+    z-index:-1;
+    min-width: 100%; 
+    min-height: 100%;
+    background-size: cover;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
